@@ -3,7 +3,7 @@
 ##### 1.整合seata的demo,此demo都配置好了，拉下来按照步骤，直接可以跑起来观察效果。
 
 ##### 2.自己项目整合Seata，主要步骤如下：
-- 1.[下载seata-server](https://github.com/seata/seata/releases),修改server配置
+- 1.[下载seata-server](https://github.com/seata/seata/releases),修改server配置(个人下载seata-server-1.4.2版本)
 - 2.client端（你自己的项目），引入配置文件，修改配置文件(注意不要遗漏，可参考下方几个关键步骤)
 - 3.数据源代理设置
 - 4.创建数据库表
@@ -14,19 +14,12 @@
 ### 1.此demo技术选型及版本信息
 
 注册中心：eureka
-
 服务间调用：feign
-
 持久层：mybatis 
-
 数据库：mysql 5.7.20
-
 Springboot:2.1.7.RELEASE
-
 Springcloud:Greenwich.SR2
-
-jdk:1.8 
-
+jdk:1.8
 seata:0.8
 
 使用不同组件，配置情况不同，可参考其他sample；
@@ -53,7 +46,7 @@ order服务关键代码如下：
     }
 ```
 ### 3.使用步骤
-- 1.拉取本demo代码 git clone xxxx;
+- 1.拉取本demo代码 git clone https://github.com/chasesunshine/test-seata.git;
 - 2.[下载seata-server](https://github.com/seata/seata/releases);
 - 3.执行每个项目下的建表语句，resource下xx.sql文件；
 - 4.seata相关建表语句见下文说明；
@@ -144,7 +137,7 @@ registry {
     cluster = "default"
   }
   eureka {
-    serviceUrl = "http://localhost:8761/eureka"  修改这里
+    serviceUrl = "http://localhost:8761/eureka"  修改这里（切记 /eureka 这个地址一定要加）
     application = "default"  
     weight = "1"
   }
@@ -182,7 +175,7 @@ registry {
 ```
 其他的配置可以暂时使用默认值。
 
-如果是在windows下启动seata-server，现在已经完成配置修改了，等eureka启动后，就可以启动seata-server了：执行/bin/seata-server.bat即可。
+如果是在windows下启动seata-server，现在已经完成配置修改了，等eureka启动后，就可以启动seata-server了：执行/bin/seata-server.bat即可（执行这一步）。
 
 ### 5.client端相关配置
 #### 1.普通配置
