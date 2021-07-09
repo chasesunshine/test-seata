@@ -48,6 +48,7 @@ order服务关键代码如下：
 ```
 ### 3.使用步骤
 - 1.拉取本demo代码 git clone https://github.com/chasesunshine/test-seata.git;
+    mjj 参考 gethub代码 https://github.com/seata/seata-samples/tree/master/springcloud-eureka-feign-mybatis-seata
 - 2.[下载seata-server](https://github.com/seata/seata/releases);
 - 3.执行每个项目下的建表语句，resource下xx.sql文件；
 - 4.seata相关建表语句见下文说明；
