@@ -4,6 +4,7 @@
 
 ##### 2.自己项目整合Seata，主要步骤如下：
 - 1.[下载seata-server](https://github.com/seata/seata/releases),修改server配置(个人下载seata-server-1.4.2版本)
+    - seata-server 配置在 doc - seata-config - seata 下 
 - 2.client端（你自己的项目），引入配置文件，修改配置文件(注意不要遗漏，可参考下方几个关键步骤)
 - 3.数据源代理设置
 - 4.创建数据库表
