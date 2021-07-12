@@ -34,6 +34,7 @@ public class OrderServiceImpl implements OrderService{
      * 1.添加本地事务：仅仅扣减库存
      * 2.不添加本地事务：创建订单，扣减库存
      */
+    // TODO: 2021/7/12 mjj修改，name = "fsp-create-order"目前测来来对于业务没有影响
     @Override
     @GlobalTransactional(name = "fsp-create-order",rollbackFor = Exception.class)
     public void create(Order order) {
