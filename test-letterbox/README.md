@@ -1,3 +1,0 @@
-# springboot_cache
-springboot项目集成redis的cache
-测试使用
