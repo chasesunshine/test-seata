@@ -8,6 +8,7 @@
         <module>account-server</module>
         <module>order-server</module>
         <module>storage-server</module>
+        <module>demo</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
