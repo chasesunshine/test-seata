@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class PublishEventController {
     @Autowired
     private UserEventRegister register;
+
     @GetMapping("/registerUser")
     @ResponseBody
     public void register()  {
