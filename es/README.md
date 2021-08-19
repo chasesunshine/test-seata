@@ -110,6 +110,16 @@
                  }
             }
     #P18
+        //创建ES客户端
+        RestHighLevelClient client = new RestHighLevelClient(RestClient.builder(new HttpHost("localhost", 9200, "http")));
+        client.close();
+    #P19
+        EsTestClientIndexCreate ——> 创建索引
+    #P20
+        EsTestClientIndexSearch ——> 查询索引
+        EsTestClientIndexDelete ——> 删除索引
+    #P21
+        
         
 
         
