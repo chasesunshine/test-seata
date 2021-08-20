@@ -131,9 +131,11 @@
         EsTestClientDocQuery ——> 查询所有索引数据
     #P25
         EsTestClientDocQuery ——> 条件查询所有索引数据
+        EsTestClientDocQuery ——> 分页查询所有索引数据
+        EsTestClientDocQuery ——> 排序查询所有索引数据
+        EsTestClientDocQuery ——> 过滤字段查询所有索引数据
+    #P26
+        
         
         
 
-        
-        
-    
