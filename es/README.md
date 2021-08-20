@@ -119,6 +119,18 @@
         EsTestClientIndexSearch ——> 查询索引
         EsTestClientIndexDelete ——> 删除索引
     #P21
+        EsTestClientDocInsert ——> 插入文档
+        EsTestClientDocUpdate ——> 修改文档
+    #P22
+        EsTestClientDocGet ——> get查询文档
+        EsTestClientDocDelete ——> 删除文档
+    #P23
+        EsTestClientDocInsertBatch ——> 批量插入文档
+        EsTestClientDocDeleteBatch ——> 批量删除文档
+    #P24
+        EsTestClientDocQuery ——> 查询所有索引数据
+    #P25
+        EsTestClientDocQuery ——> 条件查询所有索引数据
         
         
 
