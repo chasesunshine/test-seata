@@ -136,12 +136,16 @@
         EsTestClientDocQuery ——> 过滤字段查询所有索引数据
     #P26
         EsTestClientDocQuery ——> 组合查询查询所有索引数据
-        EsTestClientDocQuery ——> 范围查询查询所有索引数据
+        EsTestClientDocQuery ——> 范围查询查询所有索引数据t
     #P27
         EsTestClientDocQuery ——> 模糊查询查询所有索引数据
         EsTestClientDocQuery ——> 高亮查询查询所有索引数据
     #P28
-    
+        EsTestClientDocQuery ——> 聚合查询查询所有索引数据
+        EsTestClientDocQuery ——> 分组统计查询所有索引数据
+    #P29 
+        
+        
         
         
 
