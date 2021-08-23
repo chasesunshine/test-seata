@@ -148,6 +148,13 @@
         这时启动一个节点，会默认创建并加入一个叫做“elasticsearch”的集群。
     #30
         postman ——> localhost:1001/_cluster/health —— 集群状态查询
+    #31
+        Linux:
+        软件下载地址：https://www.elastic.co/cn/downloads/past-releases/elasticsearch-7-8-0    
+    #32
+        Linux 集群:
+        软件下载地址：https://www.elastic.co/cn/downloads/past-releases/elasticsearch-7-8-0
+    #33
         
         
         
