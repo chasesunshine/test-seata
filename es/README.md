@@ -144,7 +144,10 @@
         EsTestClientDocQuery ——> 聚合查询查询所有索引数据
         EsTestClientDocQuery ——> 分组统计查询所有索引数据
     #P29 
-        
+        在一个集群里，只要你想，可以拥有任意多个节点。而且，如果当前你的网络中没有运行任何 Elasticsearch 节点，
+        这时启动一个节点，会默认创建并加入一个叫做“elasticsearch”的集群。
+    #30
+        postman ——> localhost:1001/_cluster/health —— 集群状态查询
         
         
         
