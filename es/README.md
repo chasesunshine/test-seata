@@ -144,8 +144,8 @@
         EsTestClientDocQuery ——> 聚合查询查询所有索引数据
         EsTestClientDocQuery ——> 分组统计查询所有索引数据
     #P29 
-        在一个集群里，只要你想，可以拥有任意多个节点。而且，如果当前你的网络中没有运行任何 Elasticsearch 节点，
-        这时启动一个节点，会默认创建并加入一个叫做“elasticsearch”的集群。
+        在一个集群里，只要你想，可以拥有任意多个节 点。而且，如果当前你的网络中没有运行任何 Elasticsearch 节点，
+        这时启动一个节点，会默认创建并加入一个叫做“elasticsearch”的集群。 
     #30
         postman ——> localhost:1001/_cluster/health —— 集群状态查询
     #31
@@ -155,7 +155,18 @@
         Linux 集群:
         软件下载地址：https://www.elastic.co/cn/downloads/past-releases/elasticsearch-7-8-0
     #33
-        
+        核心概念
+        4.1.1 索引（Index)
+        4.1.2 类型（Type)
+        4.1.3 文档（Document)
+        4.1.3 字段（Field)
+        4.1.5 映射（Mapping)
+        4.1.6 分片（Shards)
+        4.1.7 副本（Replicas)
+        4.1.8 分配（Allocation)
+     #34
+        系统架构
+     #35
         
         
 
