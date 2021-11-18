@@ -1,0 +1,8 @@
+server:
+  port: 8090
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/seata_storage
+    username: root

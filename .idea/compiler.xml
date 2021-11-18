@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-server" />
+        <module name="short-message" />
         <module name="storage-server" />
         <module name="order-server" />
         <module name="account-server" />
@@ -15,6 +16,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo" target="1.8" />
+      <module name="es" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -23,6 +25,7 @@
       <module name="demo" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="order-server" options="-parameters" />
+      <module name="short-message" options="-parameters" />
       <module name="springcloud-eureka-feign-mybatis-seata" options="-parameters" />
       <module name="storage-server" options="-parameters" />
     </option>
