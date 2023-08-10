@@ -104,6 +104,20 @@ store {
 由于此demo我们使用db模式存储事务日志，所以，我们要创建三张表：global_table，branch_table，lock_table，建表sql在seata/seata/script/server/db/mysql.sql；
 
 由于存储undo_log是在业务库中，所以在每个业务库中，还要创建undo_log表，建表sql在/conf/db_undo_log.sql中。
+    -- for AT mode you must to init this sql for you business database. the seata server not need it.
+    CREATE TABLE IF NOT EXISTS `undo_log`
+    (
+        `branch_id`     BIGINT       NOT NULL COMMENT 'branch transaction id',
+        `xid`           VARCHAR(128) NOT NULL COMMENT 'global transaction id',
+        `context`       VARCHAR(128) NOT NULL COMMENT 'undo_log context,such as serialization',
+        `rollback_info` LONGBLOB     NOT NULL COMMENT 'rollback info',
+        `log_status`    INT(11)      NOT NULL COMMENT '0:normal status,1:defense status',
+        `log_created`   DATETIME(6)  NOT NULL COMMENT 'create datetime',
+        `log_modified`  DATETIME(6)  NOT NULL COMMENT 'modify datetime',
+        UNIQUE KEY `ux_undo_log` (`xid`, `branch_id`)
+    ) ENGINE = InnoDB AUTO_INCREMENT = 1 DEFAULT CHARSET = utf8mb4 COMMENT ='AT transaction mode undo table';
+    ALTER TABLE `undo_log` ADD INDEX `ix_log_created` (`log_created`);
+
 
 由于我自定义了事务组名称，所以这里也做了修改：
 ```java
